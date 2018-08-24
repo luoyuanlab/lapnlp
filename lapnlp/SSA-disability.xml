@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : SSA-disability.xml
+    Created on : November 16, 2009, 8:13 PM
+    Author     : psz
+    Description:
+        Purpose of the document follows.
+-->
+
+<SSA_disability prefix="\s^" suffix="" case_insensitive="yes" lists="yes">
+  <ssn/>
+  <discharge_summary>
+    <patient_name prefix="\b"/ suffix=":">
+    <dob suffix=":"/>
+    <age prefix="\b" suffix=":"/>
+    <medical_record# prefix="\b" suffix=":"/>
+    <admission_date suffix=":"/>
+    <discharge_date prefix="\b" suffix=":"/>
+    <attending_physician :suffix=":"/>
+    <discharge_diagnoses/>
+    <procedures_performed_during_this_hospitalization/>
+    <discharge_diet/>
+    <discharge_medications/>
+    <follow-up_instructions/>
+    <history/>
+    <physical_examination_on_admission/>
+    <hospital_course/>
+    
+  <name/>
+  <admission_date/>
+  <discharge_date prefix="\b"/>
+  <date_of_birth/>
+  <sex prefix="\b"/>
+  <service/>
+  <chief_complaint/>
+  <major_surgical_or_invasive_procedure
+      alt="MAJOR SURGICAL OR INVASIVE PROCEDURES|MAJOR SURGICAL PROCEDURES"/>
+  <attending/>
+  <history_of_present_illness
+      alt="HISTORY OF THE PRESENT ILLNESS"/>
+  <past_medical_history
+      alt="PAST SURGICAL HISTORY|HISTORY"/>
+  <psychiatric_history
+      alt="PSYCHIATRIC HISTORY(INCLUDE PRIOR HOSPITALIZATIONS, OUTPATIENT TREATMENTS, MEDICATION/ECT HISTORY, RESPONSE TO TREATMENT, 
+HISTORY OF HOMICIDAL/SUICIDAL/ASSAULTIVE BEHAVIOR)|PAST PSYCHIATRIC HISTORY" />
+  <allergies/>
+  <family_history
+      alt="MATERNAL HISTORY"/>
+  <medications
+      alt="medications on admission|ADMISSION MEDICATIONS|MEDICATIONS PRIOR TO ADMISSION"/>
+  <medications_on_discharge
+      alt="Discharge Medications|MEDICATIONS AT HOME|MEDICATIONS ON TRANSFER|HOME MEDICATIONS"/>
+  <social_history
+      alt="PSYCHOSOCIAL"/>
+  <substance_abuse
+      alt="SUBSTANCE ABUSE HISTORY|SUBSTANCE ABUSE HISTORY (INCLUDE HISTORY OF D.T.'S, WITHDRAWAL SEIZURES, BLACKOUTS, DETOX TREATMENT, I.V. USAGE)"/>
+  <physical_examination
+      alt="physical examination on admission|physical exam|physical examination on presentation|PHYSICAL EXAMINATION ON ADMISSION|PHYSICAL EXAM ON ADMISSION|ADMISSION PHYSICAL EXAMINATION|PHYSICAL EXAMINATION ON DISCHARGE"/>
+  <review_of_systems/>
+  <pertinent_results/>
+  <laboratory_data
+      alt="laboratories on admission|laboratory data on admission|Pertinent Admission Labs and Studies|Admission laboratories|Admission Labs|pertinent laboratory values on presentation|pertinent laboratory data on presentation|LABORATORY VALUES ON ADMISSION|LABORATORY STUDIES|Labs on admission"/>
+  <radiology
+      alt="radiology/imaging|PERTINENT RADIOLOGY/IMAGING|Imaging"/>
+  <chest_x-ray/>
+  <electrocardiogram/>
+  <hospital_course
+      alt="Brief Hospital Course|SUMMARY OF HOSPITAL COURSE|HOSPITAL COURSE BY SYSTEM|BRIEF SUMMARY OF HOSPITAL COURSE|CONCISE SUMMARY OF HOSPITAL COURSE BY ISSUE/SYSTEM|HOSPITAL COURSE BY SYSTEMS|HOSPITAL COURSE BY ISSUE/SYSTEM|HOSPITAL COURSE BY ISSUE/SYSTEM|SUMMARY OF HOSPITAL COURSE BY SYSTEMS|Hospital course by problem">
+    <cardiovascular/>
+    <respiratory/>
+    <GI/>
+    <GU/>
+    <FEN alt="Fluid, electrolytes, and nutrition|Fluids, electrolytes and nutrition"/>
+    <id/>
+    <endocrine/>
+    <heme/>
+  </hospital_course>
+  <discharge_status/>
+  <discharge_condition
+      alt="CONDITION AT DISCHARGE|condition on discharge"/>
+  <discharge_disposition/>
+  <discharge_diagnoses
+      alt="Discharge Diagnosis|FINAL DIAGNOSIS"/>
+  <discharge_instructions
+      alt="DISCHARGE INSTRUCTIONS/FOLLOWUP"/>
+  <follow-up_instructions
+      alt="DISCHARGE FOLLOWUP|DISCHARGE FOLLOW-UP|DISCHARGE FOLLOW UP|Followup Instructions"/>
+  <discharge_labs
+      alt="Labs on discharge"/>
+  <provider/>
+  <completed_by/>
+  <signed_electronically_by/>
+  <dictated_by/>
+  <job alt="JOB#"/>
+</discharge_summary>

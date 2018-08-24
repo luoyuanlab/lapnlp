@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : deid-challenge.xml
+    Created on : April 30 2010, 12:12 AM
+    Author     : psz
+    Description:
+        This is a structural description of corpora imported from the
+	i2b2 de-identification challenge of 2006.  The headers were
+	induced heuristically by LATE code in find-sections, and then
+	cleaned up manually by Peter Szolovits.  The imported data
+	have also been mechanically altered from the challenge
+	version, to make them more like real text. In particular,
+	extra spacing that had been introduced for tokenization has
+	been removed and in-line XML tags for PHI types have been
+	removed and turned into stand-off annotations.
+-->
+
+<report prefix="^" suffix='' case_insensitive="yes">
+  <MRN:/>
+  <Age:/>
+  <REGISTRATION_DATE:/>
+  <ADMISSION_DATE:/>
+  <DISCHARGE_DATE:/>
+  <DISCHARGE_PATIENT_ON:/>
+  <Provider:/>
+  <Attending:/>
+  <Benefits_Assigned:/>
+  <Discharge_Status:/>
+  <CODE_STATUS:/>
+  <TO_DO.PLAN: alt="TO_DO/PLAN:"/>
+  <ENTERED_BY:/>
+  <END_OF_DISCHARGE_ORDERS alt="[*]+\s+END\s+OF\s+DISCHARGE\s+ORDERS\s+[*]+"/>
+  <DISCHARGE_ORDERS alt="[*]+\s+DISCHARGE\s+ORDERS\s+[*]+"/>
+  <Patient_States_Complaint:/>
+  <Diagnosis: alt="PRINCIPAL_DIAGNOSIS:"/>
+  <ADMIT_DIAGNOSIS:/>
+  <PRINCIPAL_DISCHARGE_DIAGNOSIS. alt="PRINCIPAL_DISCHARGE_DIAGNOSIS;"/>
+  <OTHER_DIAGNOSIS. alt="OTHER_DIAGNOSIS;"/>
+  <ASSOCIATED_DIAGNOSIS:/>
+  <Treatment_Rendered:/>
+  <MEDICATIONS_ON_ADMISSION:/>
+  <Discharge_Medications: alt="MEDICATIONS_ON_DISCHARGE:">
+    <Alert_overridden:/>
+    <Reason_for_override:/>
+    <Override_Notice:/>
+    <Food.Drug_Interaction_Instruction alt="Food/Drug_Interaction_Instruction"/>
+    <POTENTIALLY_SERIOUS_INTERACTION:/>
+  </Discharge_Medications:>
+  <PCP_Name:/>
+  <Provider_Number:/>
+  <PRELIMINARY_REPORT/>
+  <ED_Discharge_Summary alt="ED_DISCHARGE_NOTIFICATION|ED_DISCHARGE_NOTIFICATION/SUMMARY"/>
+  <DISCHARGE_SUMMARY/>
+  <WILL_D.C_ORDER_BE_USED_AS_THE_D.C_SUMMARY: alt="WILL_D/C_ORDER_BE_USED_AS_THE_D/C_SUMMARY:"/>
+  <NAME:/>
+  <UNIT_NUMBER:/>
+  <Room:/>
+  <Service:/>
+  <HISTORY_OF_PRESENT_ILLNESS:/>
+  <ADMITTING_HISTORY_AND_PHYSICAL:/>
+  <PAST_MEDICAL_HISTORY:/>
+  <PAST_SURGICAL_HISTORY:/>
+  <SOCIAL_HISTORY:/>
+  <ALLERGIES: alt="ALLERGY:"/>
+  <PHYSICAL_EXAMINATION:/>
+  <LABORATORY_DATA:/>
+  <HOSPITAL_COURSE: alt="BRIEF_RESUME_OF_HOSPITAL_COURSE:|HOSPITAL_COURSE_AND_TREATMENT:"/>
+  <DISPOSITION: alt="Disposition,_Follow_up_and_Instructions_to_Patient:"/>
+  <DIET:/>
+  <ACTIVITY:/>
+  <FOLLOW_UP_APPOINTMENT.S.: alt="FOLLOW_UP_APPOINTMENT(S):"/>
+  <OPERATIONS_AND_PROCEDURES: alt="PRINCIPAL_PROCEDURE:|OTHER_TREATMENTS/PROCEDURES_(NOT_IN_O.R.)"/>
+  <ADDITIONAL_COMMENTS:/>
+  <DISCHARGE_CONDITION: alt="Condition_on_Discharge:"/>
+  <BRIEF_RESUME_OF_HOSPITAL_COURSE:/>
+  <D:/>
+  <T:/>
+  <Batch:/>
+  <TR:/>
+  <DD:/>
+  <TD:/>
+  <CC:/>
+  <Report_Status:/>
+  <CONTINGENT_UPON/>
+  <Dictated_By:/>
+  <DICTATING_FOR:/>
+  <report_end alt="\[_report_end_\]"/>
+</report>

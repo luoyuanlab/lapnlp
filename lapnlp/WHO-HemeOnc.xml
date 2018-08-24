@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is the xml heading specification for WHO 2008 guideline 
+yluo - 10/31/2012 Creation
+  -->
+
+<report prefix="\b" suffix=":" case_insensitive="yes" proc="narrative">
+    <H2 pattern="(&lt;H2&gt;\s*(.*?)\s*&lt;/H2&gt;)"
+		attrs="heading|sec_name"
+		proc="narrative">
+	  <Authors pattern="&lt;Authors&gt;.*?&lt;/Authors&gt;"
+			   dotall="yes"
+			   whole="yes"/>
+	  <H3 pattern="(&lt;H3&gt;\s*(.*?)\s*&lt;/H3&gt;)"
+		  attrs="heading|sec_name"
+		  proc="narrative">
+		<H4 pattern="(&lt;H4&gt;\s*(.*?)\s*&lt;/H4&gt;)"
+			attrs="heading|sec_name"
+			proc="narrative">
+		</H4>
+	  </H3>
+	</H2>
+</report>
+

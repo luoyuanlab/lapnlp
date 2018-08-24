@@ -12,13 +12,13 @@ yluo - 06/26/2015 rewrite using asdf framework
   gcross-ref
   '(exec cross-ref
 	ver 1.0
-	setting mgh-path
+	setting i2b2
 	ann-type cross-ref-annotation)
 
   gformat-mark
   '(exec format-mark
 	ver 1.0
-	setting mgh-path
+	setting i2b2
 	ann-type format-mark-annotation)
 
   gquantize
